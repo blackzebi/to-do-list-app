@@ -165,3 +165,7 @@ button.ant-btn:hover {
 .ant-modal-footer button.ant-btn.ant-btn-primary {
   display: none;
 }
+
+.ant-modal-content {
+  width: 100vh;
+}
