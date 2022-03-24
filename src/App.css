@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h2 {
+  margin-bottom: 0 !important;
+}
+.App {
+  text-align: center;
+  padding: 24px 80px;
+}
+
+.App-container {
+  background-color: #f1fdf9;
+}
+
+.App nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.container_add {
+  padding: 0 18rem;
+}
+.App nav ul li {
+  margin: 4px;
+}
+
+.App nav ul li:hover a {
+  background-color: #66d7e5;
+  color: #fff;
+}
+
+.App nav ul li:hover {
+  background-color: #66d7e5;
+}
+
+.App nav ul li a {
+  text-decoration: none;
+  color: orangered;
+  padding: 0 20px;
+  font-size: 1.5rem;
+}
+.App nav ul .active {
+  border-bottom: 3px solid orangered;
+}
+
+.employee-form {
+  padding: 0 18rem !important;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #ccc;
+  min-height: 15em;
+  padding: 12px 0;
+}
+
+.todo_new,
+.todo_inProgress,
+.todo_resolve {
+  width: 25em;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.list-group {
+  margin-top: 4px;
+}
+
+.todo-item {
+  border: 1px solid #ccc;
+  margin: 4px;
+  padding: 4px 8px;
+}
+
+p {
+  word-wrap: break-word;
+  width: 260px;
+  /* white-space: nowrap;
+  width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+  font-family: DavidLibre, serif;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.todo-item_delete {
+  margin-left: 12px;
+  margin-right: 8px;
+}
+
+.todo-item-description {
+  width: 260px;
+}
+/*column task*/
+.column {
+  height: max-content;
+  min-height: 100px;
+  min-width: 400px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  border: 2px solid #7d7d7d; /* Параметры границы */
+  /* display: flex; */
+  padding: 16px 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.new-column {
+  background-color: #fef2e7;
+}
+
+.in-progress-column {
+  background-color: #fffada;
+}
+
+.resolved-column {
+  background-color: #f5ffe5;
+}
+
+/*move item */
+
+.movable-item {
+  border-radius: 5px;
+  background-color: #e7fcff;
+  min-height: 100px;
+  min-width: 300px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+}
+
+/*** column todo****/
+.container_column {
+  display: flex;
+  justify-content: space-around;
+  padding: 24px 0;
+}
+
+/** input task manager*/
+.ant-form-item-label {
+  min-width: 12rem;
+}
+.ant-form-item-label {
+  text-align: left !important;
+}
+
+/* button antd hover */
+button.ant-btn:hover {
+  opacity: 0.6;
+}
+
+.ant-modal-footer button.ant-btn.ant-btn-primary {
+  display: none;
+}
