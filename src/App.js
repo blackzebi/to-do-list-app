@@ -1,10 +1,10 @@
-import React from 'react';
-import './App.css';
-import 'antd/dist/antd.css';
+import React from "react";
+import "./App.css";
+import "antd/dist/antd.css";
 import { Routes, Route, Link } from "react-router-dom";
-import Tasks from './pages/TaskManager';
-import Employees from './pages/EmployeeManager';
-import CancedledTasks from './pages/ListCanceledTask';
+import Tasks from "./pages/TaskManager";
+import Employees from "./pages/EmployeeManager";
+import CancedledTasks from "./pages/ListCanceledTask";
 // import classnames from "classnames";
 // import { appRoutes } from "./routes";
 // import Header from './pages/Header'
@@ -33,7 +33,7 @@ function Header() {
       <div className="header">
         <div className="header-logo">Todo List app</div>
         <div className="header-nav">
-          <Link className="link" to="/">
+          <Link className="link" to="/tasks">
             Tasks
           </Link>
           <Link className="link" to="/employees">
@@ -47,7 +47,6 @@ function Header() {
     </nav>
   );
 }
-
 
 function App() {
   // const [type, setType] = useState("Tasks")
@@ -71,13 +70,12 @@ function App() {
       <Header />
       <div className="App-container">
         <Routes>
-          <Route path="/" element={<Tasks />} />
+          <Route path="/tasks" element={<Tasks />} />
           <Route path="/employees" element={<Employees />} />
           <Route path="/cancedledTasks" element={<CancedledTasks />} />
         </Routes>
       </div>
     </div>
-
   );
 }
 
